@@ -1,0 +1,253 @@
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu {
+    margin: 0;
+    padding: 0;
+}
+
+html,body,fieldset,img,iframe,abbr {
+    border: 0
+}
+
+li {
+    list-style: none
+}
+
+textarea {
+    overflow: auto;
+    resize: none
+}
+
+a,button {
+    cursor: pointer
+}
+
+h1,h2,h3,h4,h5,h6,em,strong,b {
+    font-weight: 700
+}
+
+a,a:hover {
+    text-decoration: none
+}
+
+body,html {
+    width: 100%;
+    font-weight: 400;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: center
+}
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: Hiragino Kaku Gothic ProN, "Microsoft YaHei","Helvetica Neue",Arial,HelveticaNeue,Helvetica,"BBAlpha Sans",sans-serif
+}
+
+body {
+    background: #fff;
+    color: #fff;
+    opacity: 1;
+    -webkit-transition: opacity 500ms ease-in;
+    transition: opacity 500ms ease-in
+}
+
+a {
+    text-decoration: none
+}
+
+input {
+    -webkit-appearance: none
+}
+
+* {
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-focus-ring-color: rgba(0,0,0,0)
+}
+
+img {
+    display: block
+}
+
+.icon {
+    display: inline-block;
+}
+
+.icon-btn {
+    display: inline-block;
+    width: 40px;
+    height: 100%;
+}
+
+/************** index ******************/
+.header-wrap {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 46px;
+    padding: 0 18px;
+    z-index: 9999;
+}
+
+.header-wrap .back-icon {
+    background: url("img/icon_back.svg") center no-repeat;
+    background-size: 24px;
+}
+
+.header-tools {
+    height: inherit;
+}
+
+.header-tools .menu-icon {
+    background: url("img/icon_list.svg") center no-repeat;
+    background-size: 17px;
+}
+
+.header-tools .more-icon {
+    background: url("img/icon_more.svg") center no-repeat;
+    background-size: 15px;
+}
+
+.header-tools .down-icon {
+    background: url("img/icon_down.svg") center no-repeat;
+    background-size: 20px;
+}
+
+.index-cont {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.video-wrap {
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    z-index: 1;
+}
+
+video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #000;
+}
+
+.info-wrap {
+    background-color: #000;
+    padding: 14px 22px;
+    margin-top: -1px;
+    font-size: 12px;
+}
+
+.info-wrap p {
+    line-height: 1.666;
+}
+
+.info-label-row {
+    margin-top: 6px;
+    line-height: 1.5;
+}
+
+.info-label-row span + span {
+    margin-left: 10px;
+}
+
+.info-label-row span:before {
+    display: inline-block;
+    content: '';
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.play-icon:before {
+    width: 22px;
+    height: 22px;
+    background: url("img/icon_play.svg") center no-repeat;
+    background-size: contain;
+}
+
+.comment-icon:before {
+    width: 22px;
+    height: 22px;
+    background: url("img/icon_comment.svg") center no-repeat;
+    background-size: contain;
+}
+
+.pleasure-icon:before {
+    width: 16px;
+    height: 16px;
+    background: url("img/icon_like.svg") center no-repeat;
+    background-size: contain;
+}
+
+.comment-wrap {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+}
+
+.comment-wrap ul {
+    position: relative;
+    box-shadow: 0 0 35px  #262626 inset;
+    flex: 1;
+    padding: 0 24px;
+    overflow-y: auto;
+    background-color: #262626;
+}
+
+.comment-wrap ul:before {
+    display: inline-block;
+    content: "";
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 35px 35px #262626;
+    z-index: 2;
+}
+
+.comment-wrap ul:after {
+    display: inline-block;
+    content: "";
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 -35px 0 #262626;
+    z-index: 2;
+}
+
+.input-wrap {
+    padding: 14px 20px;
+    background-color: #000;
+}
+
+.input-wrap input {
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    box-sizing: border-box;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    padding: 0 12px;
+    font-size: 16px;
+    background-color: rgba(155,155,155,0.2);
+}
+
+
+/*************** media ******************/
+@media screen and (orientation: landscape) {
+    video {
+        height: 100vh;
+    }
+}
