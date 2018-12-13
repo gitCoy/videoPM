@@ -13,42 +13,135 @@
   <i class="back-icon icon-btn"></i>
   <span class="header-tools">
     <i class="menu-icon icon-btn"></i>
-    <i class="more-icon icon-btn"></i>
-    <i class="down-icon icon-btn"></i>
+    <i class="more-icon icon-btn" id="DownBtn"></i>
+    <i class="down-icon icon-btn" id="moreBtn"></i>
   </span>
 </header>
 <div class="index-cont">
   <div class="video-all-wrap">
     <div class="video-wrap">
-      <video id="video1" width="100%" controls="controls">
+      <video id="video" width="100%" webkit-playsinline playsinline x5-playsinline x-webkit-airplay="allow" poster>
         <source src="http://www.w3school.com.cn/example/html5/mov_bbb.mp4" type="video/mp4">
         <source src="http://www.w3school.com.cn/example/html5/mov_bbb.ogg" type="video/ogg">
         Your browser does not support HTML5 video.
       </video>
-    </div>
-    <div class="info-wrap">
-      <p>JUNHO（From 2PM）Winter Special Tour “冬の少年“ 東京・日本武道館 Final</p>
-      <div class="info-label-row">
-        <span class="play-icon">15k</span>
-        <span class="comment-icon">3100</span>
-        <span class="pleasure-icon">200</span>
+      <div class="video-control-wrap">
+        <div class="play-control" id="palyBtn"></div>
+        <div class="progress-control">progress</div>
+        <div>00:03:00</div>
+        <div class="time-total-control">1:33:52</div>
       </div>
+    </div>
+    <p class="info-wrap video-title">JUNHO（From 2PM）Winter Special Tour “冬の少年“ 東京・日本武道館 Final</p>
+    <div class="info-label-row info-wrap">
+      <span class="play-icon">15k</span>
+      <span class="comment-icon">3100</span>
+      <span class="pleasure-icon">200</span>
     </div>
   </div>
   <div class="comment-wrap">
-    <ul>
-      <li>
-        <div class="portrait-row"></div>
-        <div>
-          <p class="comment-name">まり</p>
-          <p class="comment-cont">この姿勢がヤバい❤️</p>
-        </div>
-      </li>
-    </ul>
+    <div class="comment-box">
+      <ul>
+        <li>
+          <div class="portrait-row" style="background-image: url(./img/default_img.png)"></div>
+          <div class="comment-row">
+            <p class="comment-name">まり</p>
+            <p class="comment-cont">ああああああああ❤️️</p>
+          </div>
+        </li>
+        <li>
+          <div class="portrait-row" style="background-image: url(./img/default_img.png)"></div>
+          <div class="comment-row">
+            <p class="comment-name">まり</p>
+            <p class="comment-cont">この姿勢がヤバい❤️</p>
+          </div>
+        </li>
+        <li>
+          <div class="portrait-row" style="background-image: url(./img/default_img.png)"></div>
+          <div class="comment-row">
+            <p class="comment-name">まり</p>
+            <p class="comment-cont">ほげほげほげほげほげほげほげほげほげほげほげ️</p>
+          </div>
+        </li>
+        <li>
+          <div class="portrait-row" style="background-image: url(./img/default_img.png)"></div>
+          <div class="comment-row">
+            <p class="comment-name">まり</p>
+            <p class="comment-cont">かっこいいーーー！！！</p>
+          </div>
+        </li>
+        <li>
+          <div class="portrait-row" style="background-image: url(./img/default_img.png)"></div>
+          <div class="comment-row">
+            <p class="comment-name">まり</p>
+            <p class="comment-cont">この姿勢がヤバい❤️</p>
+          </div>
+        </li>
+        <li>
+          <div class="portrait-row" style="background-image: url(./img/default_img.png)"></div>
+          <div class="comment-row">
+            <p class="comment-name">まり</p>
+            <p class="comment-cont">かっこいいーーー！！！️</p>
+          </div>
+        </li>
+        <li>
+          <div class="portrait-row" style="background-image: url(./img/default_img.png)"></div>
+          <div class="comment-row">
+            <p class="comment-name">まり</p>
+            <p class="comment-cont">ほげほげほげほげほげほげほげほげほげほげほげ️️</p>
+          </div>
+        </li>
+        <li>
+          <div class="portrait-row" style="background-image: url(./img/default_img.png)"></div>
+          <div class="comment-row">
+            <p class="comment-name">まり</p>
+            <p class="comment-cont">ほげほげほげほげほげほげほげほげほげほげほげ️️</p>
+          </div>
+        </li>
+        <li>
+          <div class="portrait-row" style="background-image: url(./img/default_img.png)"></div>
+          <div class="comment-row">
+            <p class="comment-name">まり</p>
+            <p class="comment-cont">この姿勢がヤバい❤️</p>
+          </div>
+        </li>
+        <li>
+          <div class="portrait-row" style="background-image: url(./img/default_img.png)"></div>
+          <div class="comment-row">
+            <p class="comment-name">まり</p>
+            <p class="comment-cont">かっこいいーーー！！！️</p>
+          </div>
+        </li>
+        <li>
+          <div class="portrait-row" style="background-image: url(./img/default_img.png)"></div>
+          <div class="comment-row">
+            <p class="comment-name">まり</p>
+            <p class="comment-cont">かっこいいーーー！！！️</p>
+          </div>
+        </li>
+      </ul>
+    </div>
     <div class="input-wrap">
       <input type="text" placeholder="コメントしよう！">
     </div>
   </div>
 </div>
+<article class="more-bar">
+  <a href="javascript:;" class="licked-icon">お気に入りに保存</a>
+  <a href="javascript:;" class="downs-icon">ダウンロード</a>
+  <a href="javascript:;" class="share-icon">シェア</a>
+</article>
+<script src="zepto.js"></script>
+<script>
+  $('#moreBtn').click(function (e) {
+    $('.more-bar').css('display', 'block').addClass('more-show');
+    history.pushState(location.href + '?bar=show', '')
+    webkit.messageHandlers.videoDownload.postMessage('testUrlString');
+  })
+  $('#palyBtn').click(function (e) {
+    var videoDom = document.getElementById('video');
+    videoDom.play();
+  })
+</script>
 </body>
 </html>
